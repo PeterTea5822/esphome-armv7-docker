@@ -17,7 +17,7 @@ FROM python:3.11-slim-bullseye AS final
 # Install runtime libraries necessarie
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libssl1.1 libffi7 libjpeg62-turbo zlib1g libfreetype6 liblcms2-2 \
-    libwebp6 libharfbuzz0b libfribidi0 libxcb1 \
+    libwebp6 libharfbuzz0b libfribidi0 libxcb1 git\
     && rm -rf /var/lib/apt/lists/*
 
 # Copia tutto il Python environment dalla fase di build
