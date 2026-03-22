@@ -28,4 +28,4 @@ ENV USERNAME="" PASSWORD=""
 WORKDIR /config
 EXPOSE 6052
 
-ENTRYPOINT ["esphome dashboard /config"]
+ENTRYPOINT ["esphome", "dashboard", "/config"]
